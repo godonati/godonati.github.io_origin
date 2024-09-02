@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +8,73 @@
     <title>Gabriele Donati - Personal Website</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
     <header>
         <h1>Gabriele O. Donati</h1>
+        <a href="../headers/contact.html" class="contact-button">Contact</a>
+
         <nav>
             <ul>
-                <li><a href="https://godonati.github.io/">Home</a></li>
-                <li><a href="../headers/about_me.html">About Me</a></li>
+                <li><a href="../home.html">Home</a></li>
                 <li><a href="../headers/projects.html">Projects</a></li>
+                <li><a href="../headers/case_studies.html">Case Studies</a></li>
                 <li><a href="../headers/bookshelf.html">Bookshelf</a></li>
                 <li><a href="https://medium.com/@gabrieledonati" target="_blank">Blog</a></li>
                 <li><a href="https://open.spotify.com/show/5l1RJUNvAkFo0VsHUlTlz5" target="_blank">Podcast</a></li>
-                <li><a href="../headers/contact.html">Contact</a></li>
                 <li><a href="../media/pdf/gabrieledonati_resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
-
-        <a href="https://calendly.com/godonati/15min" class="talk-button">Let's Talk</a>
-
     </header>
 
-    <section id="contact-form">
-        <h2>Contact Me</h2>
-        <form id="contact" action="https://formspree.io/f/xjkbzvod" method="POST">
-            <label for="first-name">First Name:</label><br>
-            <input type="text" id="first-name" name="first-name" required><br><br>
-            
-            <label for="last-name">Last Name:</label><br>
-            <input type="text" id="last-name" name="last-name" required><br><br>
-            
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="subject">Message Subject:</label><br>
-            <input type="text" id="subject" name="subject" required><br><br>
-            
-            <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
-            
-            <input type="submit" value="Send Message">
-        </form>
-    </section>
+    <main>
+
+        <section id="contact-form">
+
+            <h2></h2>
+
+            <a href="https://calendly.com/godonati/15min" class="schedule-button" target="_blank">Schedule a Call</a>
+
+            <form id="contact" action="https://formspree.io/f/xjkbzvod" method="POST">
+                <label for="first-name">First Name:</label><br>
+                <input type="text" id="first-name" name="first-name" required><br><br>
+                
+                <label for="last-name">Last Name:</label><br>
+                <input type="text" id="last-name" name="last-name" required><br><br>
+                
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="subject">Message Subject:</label><br>
+                <input type="text" id="subject" name="subject" required><br><br>
+                
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+
+        <script>
+            document.getElementById('contact').addEventListener('submit', function(event) {
+                var email = document.getElementById('email').value;
+                var firstName = document.getElementById('first-name').value;
+                var lastName = document.getElementById('last-name').value;
+                var subject = document.getElementById('subject').value;
+                var message = document.getElementById('message').value;
+        
+                if (!email || !firstName || !lastName || !subject || !message) {
+                    alert('Please fill out all fields.');
+                    event.preventDefault();
+                }
+            });
+            </script>
+
+    </main>
 
     <footer>
         <p>&copy; 2024 Gabriele Donati. All rights reserved.</p>
     </footer>
+
 </body>
 </html>

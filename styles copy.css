@@ -12,7 +12,6 @@ body {
 }
 
 header {
-    position: relative;
     background: #333;
     color: #fff;
     padding: 10px 20px;
@@ -115,17 +114,20 @@ footer {
 
 /* ------------- Contact Button Styles ------------- */
 .contact-button {
-    position: relative;
-    left: 313px;
-    bottom: 40px;
+    position: absolute;
+    right: 10px;
+    top: 3%;
+    transform: translateY(-50%);
     background-color: #eec34d;
     color: #2b2b2b;
-    padding: 10px 20px;
-    text-align: right;
+    padding: 5px 15px;
+    text-align: center;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-weight: bold;
-    transition: background-color 0.5s ease, border-color 0.5s ease;
+    border: 3px solid #8a712e;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .contact-button:hover {
@@ -135,17 +137,20 @@ footer {
 
 /* ------------- Schedule Button Styles ------------- */
 .schedule-button {
-    position: relative;
-    left: 220px;
-    bottom: 10px;
+    position: absolute;
+    right: 180px;
+    top: 17.5%;
+    transform: translateY(-50%);
     background-color: #eec34d;
     color: #2b2b2b;
-    padding: 10px 20px;
+    padding: 5px 15px;
     text-align: center;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-weight: bold;
-    transition: background-color .5s ease, border-color 0.5s ease;
+    border: 3px solid #8a712e;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .schedule-button:hover {
@@ -157,7 +162,7 @@ footer {
 #contact-form {
     background: #f9f9f9;
     padding: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 50px; /* Add more space at the bottom */
     border-radius: 8px;
     max-width: 600px;
     margin: 20px auto;
