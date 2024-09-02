@@ -1,3 +1,4 @@
+/* Main Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -70,4 +71,31 @@ footer {
         display: block;
         margin: 5px 0;
     }
+}
+
+/* ------------- Bookshelf Styles ------------- */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.book-item a {
+    text-decoration: none;
+    color: #333;
 }
