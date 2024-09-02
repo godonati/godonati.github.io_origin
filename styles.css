@@ -110,7 +110,7 @@ footer {
     text-decoration: none; /* Remove underline from link */
     border-radius: 10px; /* Rounded corners for the square */
     font-weight: bold;
-    border: 3px solid #0056b3; /* Colored border around the button */
+    border: 3px solid #8a712e; /* Colored border around the button */
     transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effect */
     margin-top: 10px;
 }
@@ -118,5 +118,5 @@ footer {
 .talk-button:hover {
     background-color: #8a712e; /* Darker shade for hover effect */
     color: #f0f0f0;
-    /* border-color: #003f7f; /* Darker border color on hover */
+    /*border-color: #003f7f; /* Darker border color on hover */
 }
