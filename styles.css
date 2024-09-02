@@ -12,8 +12,14 @@ header {
     background: #333;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
+    /* text-align: center; */
     border-bottom: 2px solid #444;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space between title/nav and button */
 }
 
 header h1 {
@@ -24,17 +30,19 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
+    /* display: inline; */
     margin: 0 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
 }
 
 nav ul li a:hover {
@@ -102,7 +110,7 @@ footer {
 
 /* Style for the Let's Talk button with a colored square and rounded corners */
 .talk-button {
-    display: inline-block;
+    /* display: inline-block; */
     background-color: #eec34d; /* Background color for the button */
     color: #2b2b2b; /* Text color */
     padding: 10px 20px; /* Padding inside the button */
@@ -112,7 +120,7 @@ footer {
     font-weight: bold;
     border: 3px solid #8a712e; /* Colored border around the button */
     transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effect */
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .talk-button:hover {
