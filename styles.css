@@ -86,7 +86,61 @@ footer {
     }
 }
 
-/* ------------- Bookshelf Styles ------------- */
+/* ------------- Projects List Styles ------------- */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projects-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.projects-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projects-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* ------------- Case Studies List Styles ------------- */
+.case-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.case-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 224px;
+    text-align: center;
+}
+
+.case-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.case-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* ------------- Bookshelf List Styles ------------- */
 .book-list {
     display: flex;
     flex-wrap: wrap;
